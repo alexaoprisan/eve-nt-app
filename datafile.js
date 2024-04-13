@@ -10,23 +10,64 @@ function addEventField() {
 
     // Set the innerHTML of the eventForm
     eventForm.innerHTML = `
-      <label for="eventTitle">Event Title:</label> <input type="text" id="eventTitle" required><br><br>
-      <label for="eventDate">Event Date:</label> <input type="date" id="eventDate" required><br><br>
-      <label for="eventLoc">Event Location:</label> <input type="text" id="eventLoc" required><br><br>
-      <label for="EventTags">Tags:</label>
-      <select name="EventTags" class="EventTags">
-        <option value="Konzert">Konzert</option>
-        <option value="Foodevent">Foodevent</option>
-        <option value="Festivals">Festivals</option>
-        <option value="Demo">Demo</option>
-        <option value="Kino">Kino</option>
-      </select><br><br>
-      <label for="eventImage">Upload Image:</label> <input type="file" id="eventImage"><br><br>
-      <label for="eventLink">Link:</label> <input type="url" id="eventLink"><br><br>
-      <label for="eventDescription">Event Description:</label> <textarea id="eventDescription"></textarea><br><br>
-      <label for="eventCost">Paid Event:</label> <input type="checkbox" id="eventCost"><br><br>
-      <button id="submitEventButton">Save Event</button>
-    `;
+    <section class="h-100 h-custom" style="background-image: url('assets/bg.jpg');">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Event Registration</h3>
+
+            <form class="px-md-3" id="eventForm">
+              <div class="form-group mb-3">
+                <label for="eventTitle" class="form-label">Event Title:</label>
+                <input type="text" id="eventTitle" class="form-control h-25" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventDate" class="form-label">Event Date:</label>
+                <input type="date" id="eventDate" class="form-control h-25" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventLoc" class="form-label">Event Location:</label>
+                <input type="text" id="eventLoc" class="form-control h-25" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="EventTags" class="form-label">Tags:</label>
+                <select name="EventTags" id="EventTags" class="form-control h-25">
+                  <option value="Konzert">Konzert</option>
+                  <option value="Foodevent">Foodevent</option>
+                  <option value="Festivals">Festivals</option>
+                  <option value="Demo">Demo</option>
+                  <option value="Kino">Kino</option>
+                </select>
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventImage" class="form-label">Upload Image:</label>
+                <input type="file" id="eventImage" class="form-control h-25">
+                <label for="eventImage" class="file-label">Choose File</label>
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventLink" class="form-label">Link:</label>
+                <input type="url" id="eventLink" class="form-control h-25">
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventDescription" class="form-label">Event Description:</label>
+                <textarea id="eventDescription" class="form-control h-25"></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="eventCost" class="form-label">Paid Event:</label>
+                <input type="checkbox" id="eventCost" class="form-check-input">
+              </div>
+              <button type="submit" id="submitEventButton" class="btn btn-primary">Save Event</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
 
     // Attach event listener to the "Save Event" button
     document
