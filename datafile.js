@@ -1,5 +1,11 @@
+const fs = require('fs');
+
+
+// Read the contents of the JSON file
 const data = fs.readFileSync('Events.json');
 
+
+// Parse the JSON data into a JavaScript object
 const jsonData = JSON.parse(data);
 
 // Modify the JavaScript object by adding new data
@@ -71,8 +77,10 @@ jsonData.event.push(
 const jsonString = JSON.stringify(jsonData);
 
 
-fs.writeFileSync('Events.json', JSON.stringify(jsonData));
-
+fs.writeFileSync('Events.json', jsonString, 'utf-8', (err) => {
+  if (err) throw err;
+  console.log('Data added to file');
+});
 
 const update_data = fs.readFileSync('Events.json');
 const updated_jsonData = JSON.parse(update_data);
