@@ -7,7 +7,7 @@
       "type": "Konzert",
       "description": "Helene Fischer live in Wien",
       "link": "https://www.stadthalle.com/de",
-      "isCost": "true/false",
+      "isCost": "true",
       "image": "https://www.stadthalle.com/fileadmin/_processed_/csm_2020-02-12_Helene_Fischer"
     },
     {
@@ -17,7 +17,7 @@
       "type": "Cinema",
       "description": "Best movie ever",
       "link": "https://www.artis.at/",
-      "isCost": "true/false",
+      "isCost": "true",
       "image": "https://www.artis.at/wp-content/uploads/2022/03/Dune-2-Poster-1-1024x576.jpg"
     }
   ]
