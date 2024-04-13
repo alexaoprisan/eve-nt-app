@@ -10,6 +10,7 @@ function addEventField() {
 
     // Set the innerHTML of the eventForm
     eventForm.innerHTML = `
+
     <section class="h-100 h-custom" style="background-image: url('assets/bg.jpg');">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -68,6 +69,7 @@ function addEventField() {
   </div>
 </section>
 `;
+
 
     // Attach event listener to the "Save Event" button
     document
