@@ -10,9 +10,9 @@ function addEventField() {
 
     // Set the innerHTML of the eventForm
     eventForm.innerHTML = `
-      <label for="eventTitle">Event Title:</label> <input type="text" id="eventTitle" required><br><br>
-      <label for="eventDate">Event Date:</label> <input type="date" id="eventDate" required><br><br>
-      <label for="eventLoc">Event Location:</label> <input type="text" id="eventLoc" required><br><br>
+      <div class="mainInputbox"> <label for="eventTitle">Event Title:</label> <input type="text" id="eventTitle" required><br>
+      <label for="eventDate">Event Date:</label> <input type="date" id="eventDate" required><br>
+      <label for="eventLoc">Event Location:</label> <input type="text" id="eventLoc" required><br>
       <label for="EventTags">Tags:</label>
       <select name="EventTags" class="EventTags">
         <option value="Konzert">Konzert</option>
@@ -20,12 +20,12 @@ function addEventField() {
         <option value="Festivals">Festivals</option>
         <option value="Demo">Demo</option>
         <option value="Kino">Kino</option>
-      </select><br><br>
-      <label for="eventImage">Upload Image:</label> <input type="file" id="eventImage"><br><br>
-      <label for="eventLink">Link:</label> <input type="url" id="eventLink"><br><br>
+      </select><br>
+      <label for="eventImage">Upload Image:</label> <input type="file" id="eventImage">
+      <label for="eventLink">Link:</label> <input type="url" id="eventLink"><br>
       <label for="eventDescription">Event Description:</label> <textarea id="eventDescription"></textarea><br><br>
-      <label for="eventCost">Paid Event:</label> <input type="checkbox" id="eventCost"><br><br>
-      <button id="submitEventButton">Save Event</button>
+      <label for="eventCost">Paid Event:</label> <input type="checkbox" id="eventCost"><br>
+      <button id="submitEventButton">Save Event</button></div>
     `;
 
     // Attach event listener to the "Save Event" button
