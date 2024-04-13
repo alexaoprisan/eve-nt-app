@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
-  background-color: #c1dff0;
+  background-color: #b8e5ff !important;
 }
 
 .searchboxAndButton {
@@ -96,7 +96,7 @@ button a {
 
 
 .container {
-  text-align: center;
+
   margin-top: 100px;
 }
 
@@ -106,7 +106,7 @@ h1 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-family: "Great Vibes", sans-serif;
-
+  text-align: center;
 }
 
 .btnAddEvent {
@@ -118,6 +118,7 @@ h1 {
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s ease;
+
 }
 
 .btnAddEvent:hover {
@@ -133,8 +134,13 @@ h1 {
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s ease;
+
 }
 
 .favoritenliste:hover {
   background-color: #0056b3;
+}
+
+.btnCen {
+  text-align: center;
 }
