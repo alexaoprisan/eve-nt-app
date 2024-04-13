@@ -7,7 +7,7 @@ fetch("Events.json")
       return `<div class="row mb-2">
           <div class="col">
 <div class="card" style="width: 18rem;">
-  <div class="card-body bg-success rounded">
+  <div class="card-body bg-primary rounded">
     <h5 class="card-title">${event.title}</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Wann: ${event.date}</h6>
      <h6 class="card-subtitle mb-2 text-body-secondary">Wo: ${event.location}</h6>
@@ -34,7 +34,7 @@ if (data) {
     return `<div class="row mb-2">
         <div class="col">
 <div class="card" style="width: 18rem;">
-  <div class="card-body bg-success rounded">
+  <div class="card-body bg-primary rounded">
     <h5 class="card-title">${event.title}</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Wann: ${event.date}</h6>
      <h6 class="card-subtitle mb-2 text-body-secondary">Wo: ${event.location}</h6>
