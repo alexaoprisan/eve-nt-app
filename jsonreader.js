@@ -7,7 +7,7 @@ fetch("Events.json")
       return `<div class="row mb-2">
           <div class="col">
 <div class="card" style="width: 18rem;">
-  <div class="card-body">
+  <div class="card-body bg-success rounded">
     <h5 class="card-title">${event.title}</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Wann: ${event.dateFrom} bis ${event.dateTo}</h6>
      <h6 class="card-subtitle mb-2 text-body-secondary">Wo: ${event.location}</h6>
