@@ -62,7 +62,7 @@ input {
 #eventCost {
   width: 6%;
 }
-#btnSubmitEvent {
+#submitEventButton {
   background-color: #5171a5;
   color: #fff;
   height: 50px;
