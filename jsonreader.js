@@ -30,6 +30,7 @@ fetch("Events.json")
 let data = JSON.parse(localStorage.getItem("events"));
 console.log(data);
 if (data) {
+  data.reverse();
   let htmlElementsLocal = data.map((event) => {
     return `<div class="row mb-2">
         <div class="col">
