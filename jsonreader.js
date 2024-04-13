@@ -6,13 +6,13 @@ fetch("Events.json")
     let htmlElements = data.events.map((event) => {
       return `<div class="row mb-2">
           <div class="col">
-<div class="card" style="width: 18rem;">
-  <div class="card-body bg-primary rounded">
+<div class="card border border-3 border-primary" style="width: 18rem;">
+  <div class="card-body bg-light rounded">
     <h5 class="card-title">${event.title}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Wann: ${event.date}</h6>
-     <h6 class="card-subtitle mb-2 text-body-secondary">Wo: ${event.location}</h6>
-    <p class="card-text">Kategorie: ${event.type}</p>
-    <p class="card-text">Free: ${event.isCost}</p>
+    <h6 class="card-subtitle mb-2"><strong>Wann: </strong> ${event.date}</h6>
+     <h6 class="card-subtitle mb-2"> <strong>Wo: </strong>${event.location}</h6>
+    <h6 class="card-text"><strong>Kategorie: </strong>  ${event.type}</h6>
+    <h6 class="card-text"><strong>Gratis: </strong>  ${event.isCost}</h6>
     <a href="#" class="card-link">Event Link</a>
    
   </div>
@@ -33,13 +33,13 @@ if (data) {
   let htmlElementsLocal = data.map((event) => {
     return `<div class="row mb-2">
         <div class="col">
-<div class="card" style="width: 18rem;">
-  <div class="card-body bg-primary rounded">
+<div class="card border border-3 border-primary" style="width: 18rem;">
+  <div class="card-body bg-light rounded">
     <h5 class="card-title">${event.title}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Wann: ${event.date}</h6>
-     <h6 class="card-subtitle mb-2 text-body-secondary">Wo: ${event.location}</h6>
-    <p class="card-text">Kategorie: ${event.type}</p>
-    <p class="card-text">Free: ${event.isCost}</p>
+    <h6 class="card-subtitle mb-2 "><strong>Wann: </strong> ${event.date}</h6>
+     <h6 class="card-subtitle mb-2 "><strong>Wo: </strong> ${event.location}</h6>
+    <h6 class="card-text"><strong>Kategorie: </strong> ${event.type}</h6>
+    <h6 class="card-text"> <strong>Free: </strong>${event.isCost}</h6>
     <a href="#" class="card-link">Event Link</a>
    
   </div>

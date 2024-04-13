@@ -1,5 +1,10 @@
 body {
   background-color: #c1dff0;
+  text-align: center;
+  font-family: "Poppins";
+}
+button {
+  font-family: "Poppins";
 }
 .searchboxAndButton {
   display: flex;
@@ -87,4 +92,31 @@ select {
 button a {
   text-decoration: none;
   color: #fff;
+}
+
+.favoritenliste {
+  text-align: center;
+  margin-top: 20px;
+}
+.favoritenliste > div {
+  padding: 10px;
+}
+.localstorageListe {
+  text-align: center;
+}
+.localstorageListe > div {
+  padding: 10px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
