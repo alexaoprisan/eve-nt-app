@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 body {
-
-
   background-color: #c1dff0 !important;
   text-align: center;
   font-family: "Poppins";
 }
 button {
   font-family: "Poppins";
-
 }
 
 .searchboxAndButton {
@@ -46,8 +43,6 @@ button {
   border: 0px;
 }
 
-
-
 .mainInputbox {
   background-color: #f1c8db;
   width: 57%;
@@ -72,9 +67,8 @@ input {
   width: 6%;
 }
 
-
 #btnSubmitEvent {
-   background-color: #5171a5;
+  background-color: #5171a5;
   color: #fff;
   height: 50px;
   width: 150px;
@@ -111,17 +105,7 @@ button a {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
 .container {
-
   margin-top: 100px;
 }
 
@@ -143,7 +127,6 @@ h1 {
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s ease;
-
 }
 
 .btnAddEvent:hover {
@@ -151,7 +134,6 @@ h1 {
 }
 
 .favoritenliste {
-  background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -159,27 +141,21 @@ h1 {
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s ease;
-
 }
 
-.favoritenliste:hover {
-  background-color: #0056b3;
+.localstorageListe {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .btnCen {
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .favoritenliste {
   text-align: center;
@@ -213,6 +189,7 @@ h1 {
   border-color: #5171a5;
   border-width: 5px;
 }
+
 .listenContainer {
   display: flex;
   flex-direction: column;
@@ -226,4 +203,3 @@ h1 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   padding-top: 30px;
 }
-

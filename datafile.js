@@ -1,11 +1,11 @@
 function addEventField() {
   // Check if the eventForm element already exists in the document
-  var eventForm = document.getElementById('eventForm');
+  var eventForm = document.getElementById("eventForm");
 
   if (!eventForm) {
     // If it doesn't exist, create the event form
-    eventForm = document.createElement('div');
-    eventForm.id = 'eventForm';
+    eventForm = document.createElement("div");
+    eventForm.id = "eventForm";
     document.body.appendChild(eventForm); // Append it to the body or any other container element you prefer
 
     // Set the innerHTML of the eventForm
@@ -14,7 +14,7 @@ function addEventField() {
     <section class="h-100 h-custom" style="background-image: url('assets/bg.jpg');">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-8 col-xl-6">
+      <div class="">
         <div class="card rounded-3">
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Event Registration</h3>
@@ -70,26 +70,25 @@ function addEventField() {
 </section>
 `;
 
-
     // Attach event listener to the "Save Event" button
     document
-      .getElementById('submitEventButton')
-      .addEventListener('click', submitEvent);
+      .getElementById("submitEventButton")
+      .addEventListener("click", submitEvent);
   } else {
     // If the eventForm already exists, just make it visible
-    eventForm.style.display = 'block';
+    eventForm.style.display = "block";
   }
 }
 
 function submitEvent() {
-  var title = document.getElementById('eventTitle').value;
-  var date = document.getElementById('eventDate').value;
-  var location = document.getElementById('eventLoc').value;
-  var type = document.querySelector('.EventTags').value;
-  var description = document.getElementById('eventDescription').value;
-  var link = document.getElementById('eventLink').value;
-  var isCost = document.getElementById('eventCost').checked;
-  var image = document.getElementById('eventImage').files[0]; // Uploaded image
+  var title = document.getElementById("eventTitle").value;
+  var date = document.getElementById("eventDate").value;
+  var location = document.getElementById("eventLoc").value;
+  var type = document.querySelector(".EventTags").value;
+  var description = document.getElementById("eventDescription").value;
+  var link = document.getElementById("eventLink").value;
+  var isCost = document.getElementById("eventCost").checked;
+  var image = document.getElementById("eventImage").files[0]; // Uploaded image
 
   var event = {
     title: title,
@@ -103,16 +102,16 @@ function submitEvent() {
   };
 
   // Retrieve existing events from localStorage or initialize an empty array
-  var events = JSON.parse(localStorage.getItem('events')) || [];
+  var events = JSON.parse(localStorage.getItem("events")) || [];
 
   // Add the new event to the array
   events.push(event);
 
   // Store the updated events array back to localStorage
-  localStorage.setItem('events', JSON.stringify(events));
+  localStorage.setItem("events", JSON.stringify(events));
 
   // Display a confirmation message
-  alert('Event has been saved successfully');
+  alert("Event has been saved successfully");
 
   // Optionally, reset the form fields after submission
   resetForm();
@@ -120,14 +119,14 @@ function submitEvent() {
 
 function resetForm() {
   // Reset input fields manually
-  document.getElementById('eventTitle').value = '';
-  document.getElementById('eventDate').value = '';
-  document.getElementById('eventLoc').value = '';
-  document.querySelector('.EventTags').selectedIndex = 0; // Reset select element
-  document.getElementById('eventImage').value = ''; // Reset file input
-  document.getElementById('eventLink').value = '';
-  document.getElementById('eventDescription').value = '';
-  document.getElementById('eventCost').checked = false;
+  document.getElementById("eventTitle").value = "";
+  document.getElementById("eventDate").value = "";
+  document.getElementById("eventLoc").value = "";
+  document.querySelector(".EventTags").selectedIndex = 0; // Reset select element
+  document.getElementById("eventImage").value = ""; // Reset file input
+  document.getElementById("eventLink").value = "";
+  document.getElementById("eventDescription").value = "";
+  document.getElementById("eventCost").checked = false;
 }
 
-document.getElementById('btnAddEvent').addEventListener('click', addEventField);
+document.getElementById("btnAddEvent").addEventListener("click", addEventField);
