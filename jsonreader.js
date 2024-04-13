@@ -6,7 +6,7 @@ fetch("Events.json")
     let htmlElements = data.events.map((event) => {
       return `<div class="row mb-2">
           <div class="col">
-<div class="card border border-3 border-primary" style="width: 18rem;">
+<div class="card border border-4 border-primary" style="width: 18rem;">
   <div class="card-body bg-light rounded">
     <h5 class="card-title">${event.title}</h5>
     <h6 class="card-subtitle mb-2"><strong>Wann: </strong> ${event.date}</h6>
@@ -34,7 +34,7 @@ if (data) {
   let htmlElementsLocal = data.map((event) => {
     return `<div class="row mb-2">
         <div class="col">
-<div class="card border border-3 border-primary" style="width: 18rem;">
+<div class="card border border-4 border-primary" style="width: 18rem;">
   <div class="card-body bg-light rounded">
     <h5 class="card-title">${event.title}</h5>
     <h6 class="card-subtitle mb-2 "><strong>Wann: </strong> ${event.date}</h6>
